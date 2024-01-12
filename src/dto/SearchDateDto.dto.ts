@@ -5,6 +5,7 @@ import { IsValidDate } from 'src/assets/decorators';
 export class SearchDateDto {
   @IsValidDate()
   fromData!: string;
+
   @IsValidDate()
   toDate!: string;
 }

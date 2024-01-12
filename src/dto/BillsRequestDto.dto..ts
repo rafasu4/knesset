@@ -6,11 +6,12 @@ export class BillsRequestDto {
   @IsNotEmpty()
   @IsNumber()
   knessetNum: number;
+
   @IsNotEmpty()
   @IsNumber()
   mkId: number;
 
-  //   @ValidateNested()
-  //   @Type(() => SearchDateDto)
-  //   searchDate?: SearchDateDto
+  @ValidateNested()
+  @Type(() => SearchDateDto)
+  searchDate?: SearchDateDto;
 }
