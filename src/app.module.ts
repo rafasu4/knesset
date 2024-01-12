@@ -1,10 +1,8 @@
-import { Module } from '@nestjs/common'
-import { ConfigModule } from '@nestjs/config'
-import { BillsModule } from './bills/bills.module'
+import { Module } from '@nestjs/common';
+import { ConfigModule } from '@nestjs/config';
+import { KnessetProviderModule } from './knesset-provider/knesset-provicer.module';
 
 @Module({
-  imports: [ConfigModule.forRoot(), BillsModule],
-  controllers: [],
-  providers: [],
+  imports: [ConfigModule.forRoot(), KnessetProviderModule],
 })
 export class AppModule {}
